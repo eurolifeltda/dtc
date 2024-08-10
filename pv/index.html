@@ -298,187 +298,149 @@
                     <!-- Prerender link -->
                     <link rel="prerender" href="https://pay.hotmart.com/L84478044O?off=2stwbu15&checkoutMode=10">
                     <!-- Comments Section -->
-                    <script><style>
+                   <div class="html-zYSSFR7540945-element ">
+<div>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fake Chat</title>
+<style>
 body {
-    font-family: 'Georgia', serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f9f9f9;
 }
 #chat-container {
-    max-width: 100%;
-    margin: auto;
-    padding: 20px;
-    overflow-y: auto;
-    max-height: calc(100vh - 300px);
-    background-color: #fff;
-    display: flex;
-    flex-direction: column-reverse;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+max-width: 100%;
+margin: auto;
+padding: 10px;
+overflow-y: auto;
+max-height: calc(100vh - 280px); Ajuste de altura para caber na tela do iPhone 13
+margin-top: 5px;
+background-color: #eee; Adicionando um fundo cinza ao chat-container
+display: flex;
+flex-direction: column-reverse; Invertendo a ordem dos itens
 }
 .comment {
-    padding: 15px 25px;
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid #eee;
-    background-color: #fafafa;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-.comment .content {
-    flex: 1;
+margin-bottom: 5px; Reduzindo o espaçamento entre os comentários
+font-size: 24px; Aumentando o tamanho da fonte dos comentários
+width: 100%;
+box-sizing: border-box;
+padding: 10px; Aumentando o preenchimento dos comentários
+display: flex; Adicionando flexbox para alinhamento
+align-items: center; Alinhando os itens verticalmente
 }
 .comment .user {
-    font-weight: bold;
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 5px;
+font-weight: bold;
 }
 .comment .text {
-    font-size: 15px;
-    color: #555;
-    white-space: pre-wrap;
+flex: 1; O texto do comentário ocupa todo o espaço disponível
+overflow-wrap: break-word; Quebra de palavra para evitar que os comentários ultrapassem os limites
+text-align: left; Alinhando o texto do comentário à esquerda
 }
 #title {
-    text-align: center;
-    color: #fff;
-    background-color: #333;
-    padding: 15px;
-    font-size: 24px;
-    font-family: 'Georgia', serif;
-    border-bottom: 2px solid #444;
-    border-top-left-radius: 10px; /* Borda arredondada na parte superior esquerda */
-    border-top-right-radius: 10px; /* Borda arredondada na parte superior direita */
+text-align: center;
+color: #fff;
+margin-top: 5px;
+background-color: #007bff;
+padding: 10px;
+border-radius: 5px;
+font-size: 20px; Tamaño menor para el título
+margin-bottom: 5px; Reduciendo el espaciado debajo del título
+}
+#subtitle {
+text-align: center;
+color: #fff;
+background-color: #6c757d;
+padding: 5px;
+border-radius: 3px;
+font-size: 18px; Tamaño menor para el subtítulo
+margin-bottom: 10px; Reduciendo el espaciado debajo del subtítulo
 }
 #comment-form {
-    max-width: 100%;
-    margin: auto;
-    padding: 20px;
-    background-color: #fff;
-    border-top: 2px solid #ccc;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+max-width: 100%;
+margin: auto;
+margin-top: 5px;
+text-align: center;
+padding: 10px;
 }
 textarea {
-    width: calc(100% - 20px);
-    padding: 15px;
-    margin-top: 10px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    box-sizing: border-box;
-    resize: none;
-    font-size: 16px;
-    font-family: 'Georgia', serif;
+width: calc(100% - 20px);
+padding: 10px;
+margin-top: 5px;
+border: 2px solid #000;
+border-radius: 5px;
+box-sizing: border-box;
+resize: none;
+font-size: 18px; Tamaño de la fuente del campo de texto
 }
 input[type="submit"] {
-    display: block;
-    margin: auto;
-    margin-top: 15px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    padding: 15px;
-    cursor: pointer;
-    font-size: 16px;
-    width: calc(100% - 24px);
-    transition: background-color 0.3s ease;
-}
-input[type="submit"]:hover {
-    background-color: #444;
+display: block;
+margin: auto;
+margin-top: 10px;
+background-color: #007bff;
+color: #fff;
+border: none;
+border-radius: 5px;
+padding: 10px;
+cursor: pointer;
+font-size: 18px; Tamaño de la fuente del botón
+width: calc(100% - 24px);
 }
 </style>
-</head>
-<body>
 <!-- Título "CHAT LIBERADO" -->
 <div id="title">CHAT LIBERADO</div>
+<!-- Subtítulo "Mensajes Principales" -->
+<div id="subtitle">Mensajes Principales</div>
 <!-- Sección de Chat -->
 <div id="chat-container">
 </div>
-<!-- Formulário de Comentário -->
+<!-- Formulario de Comentario -->
 <div id="comment-form">
-    <form id="form">
-        <textarea id="user-comment" placeholder="Escribe tu comentario aquí..." rows="3" required></textarea>
-        <input type="submit" value="Enviar">
-    </form>
+<form id="form">
+<textarea id="user-comment" placeholder="Escribe tu comentario aquí..." rows="2" required=""></textarea>
+<input type="submit" value="Enviar">
+</form>
 </div>
 <script>
-    // Lista de comentarios automáticos al abrir el sitio
+    // Lista de comentarios automaticos al abrir el sitio
     const initialComments = [
         "NUNCA VI NADA IGUAL",
         "¡Wow, ahora todo tiene sentido, entendí por qué nunca tuve suerte jajaja!",
         "Sí, ¡quiero esta abundancia en mi vida! 🙏🙏",
-        "¡Afortunadamente conseguí un lugar en este evento! La última vez quedé afuera",
- "¡Mi amiga de la universidad me habló mucho de este monje! ¡Él es increíble!",
-            "¡Es realmente muy conocido! Su técnica es una auténtica revelación. La forma en que el monje desbloquea la prosperidad es increíble.",
-            "¡Esta prosperidad magnética es real!",
-            "No puedo creer la diferencia que la técnica del monje Akira Sunyata ha hecho en mi vida. ¡La prosperidad es ahora una realidad para mí!",
-            "Esta es la prosperidad que he estado esperando en mi vida.",
-            "¡Escuchar a este monje era todo lo que necesitaba!",
-            "Regresé aquí para decir que esta prosperidad realmente funciona.",
-            "Para los que tengan dudas, les puedo decir que este monje es muy famoso.",
-            "¡Regresé aquí para decirte que mires este video hasta el final y no te arrepentirás!",
-            "¡Vine a decir que realmente funciona! ¡Me alegro de que no hayan eliminado este vídeo todavía!",
-            "¡Mi hermana me contó sobre este video! ¡Realmente funciona!",
-            "¡Mira este vídeo sin miedo! ¡Realmente funciona!"
+        "¡Afortunadamente conseguí un lugar en este evento! La última vez me quedé afuera"
     ];
 
-    // Lista de comentarios automáticos durante el video
+    // Lista de comentarios automaticos durante el video
     const videoComments = [
         // Primeros 20 minutos
         [
             "Estoy agradecida por estar aquí 🙏",
             "Qué bueno que estoy escuchando esto",
             "Esta técnica es increíble, gracias Akira",
-            "¡Estoy amando! ❤️",
-            "Este monje es famoso. Lo he visto en la tele…",
-            "Mi compañera de trabajo lo hizo, ahora quiero hacerlo también.",
-            "La sabiduría y experiencia del monje Akira Sunyata son evidentes. ¡Resultado real!",
-            "Vine por recomendación de mi prima que no para de hablar de este vídeo.",
-            "Mi vida cambió completamente gracias a Akira Sunyata.",
-            "Ya he visto videos de él en TikTok, ¡es realmente increíble!",
-            "¡Me alegra que Akira Sunyata haya compartido este conocimiento! ¡Esto cambió mi vida!",
-            "El monje es un verdadero maestro en el arte de desbloquear la abundancia. ¡Tus técnicas son increíblemente poderosas! Tengo muchas ganas de ponerlo en práctica pronto!",
-            "Muchas gracias Akira Sunyata.",
-            "¡Este monje es increíble!"
-           
+            "¡Lo estoy amando! ❤️",
+            
         ],
         // Últimos 10 minutos
         [
-            "Quiero ser uno de los primeros, ya tomé la tarjeta",
-            "¡Yo quiero!",
-            "Realmente deseo mucho esto",
-            "Voy a comprar, por favor",
-            "Necesito este programa",
-            "¡Los resultados son reales! En tan solo unos días ya pude ver cambios significativos. Definitivamente vale la pena.",
-            "Al principio tenía miedo, pero después de aplicar esta técnica, ¡los resultados fueron increíbles! ¡Estoy muy satisfecho!",
-            "¡Nunca imaginé que sería posible alcanzar tanta prosperidad en tan poco tiempo! Esta técnica realmente cambió mi vida financiera.",
-            "Estaba teniendo dificultades financieras y, después de aplicar esta técnica, vi un cambio completo. Hoy, vivo una vida de abundancia.",
-            "Los resultados fueron rápidos y concretos. Pasé de estar endeudado a tener una vida financieramente estable en tan solo unos días.",
-            "Un amigo me lo recomendó, y decidí intentarlo. Ahora, estoy experimentando una prosperidad que nunca imaginé que fuera posible.",
-            "Esta técnica transformó completamente mi relación con el dinero. Ahora, vivo en constante abundancia y realización financiera.",
-            "¡Pensé que era la locura de mi esposa! Confieso que no esperaba tanto, pero esta técnica superó todas mis expectativas. Es sorprendente la prosperidad que he alcanzado.",
-            "Ya estaba incrédulo, pero esta técnica realmente me devolvió la confianza. Hoy vivo una vida de logros financieros.",
-            "¡Nunca imaginé que una técnica pudiera cambiar mi vida financiera tan rápido!",
-            "Estoy muy feliz con el cambio que la técnica ha hecho en mi vida. ¡Obtuve la vida abundante que siempre soñé!",
-            "Antes me costaba pagar las cuentas, pero ahora, gracias a esta técnica, tengo recursos de sobra para vivir cómodamente.",
-            "Los resultados llegaron rápidamente. Hoy puedo decir que vivo una vida de logros financieros que siempre había soñado.",
-            "Después de unos días de aplicar la técnica, sigo viendo crecer mi prosperidad. ¡Soy la prueba viviente de que funciona!",
-            "Esta técnica prometía un cambio financiero, pero los resultados fueron incluso mejores de lo que podría haber imaginado.",
-            "En poco tiempo, mi vida financiera dio un giro. La técnica realmente cumple lo que promete.",
-            "Esta técnica garantizó mi estabilidad financiera durante años. La seguridad que siento hoy no tiene precio.",
-            "¡Estoy muy feliz! ¿Por qué no descubrí esto antes? ¡La técnica es real! Un verdadero milagro para quienes buscan prosperidad.",
-            "¡Estoy viendo resultados increíbles! ¡Estoy muy feliz!",
-            "¡Viví sin dinero! Después de aplicar esta técnica, mi vida cambió. Hoy vivo una vida de abundancia."
+            "quiero ser uno de los primeros, ya tomé la tarjeta",
+            "¡Lo quiero!",
+            "Realmente lo deseo mucho",
+            "voy a comprar, por favor",
+            "Necesito este programa"
         ]
     ];
 
-    // Función para agregar un nuevo comentario
+    // Funcion para agregar un nuevo comentario
     function addComment(username, text, isYou) {
         const chatContainer = document.getElementById('chat-container');
         const newComment = document.createElement('div');
         newComment.classList.add('comment');
-        newComment.innerHTML = '<div class="content"><span class="user">' + (isYou ? 'Tú' : username) + ':</span><div class="text">' + text + '</div></div>';
+        if (isYou) {
+            newComment.innerHTML = '<span class="user">Tú:</span> <span class="text">' + text + '</span>';
+        } else {
+            newComment.innerHTML = '<span class="user">' + username + ':</span> <span class="text">' + text + '</span>';
+        }
         // Agregando el nuevo comentario al inicio del chat
         chatContainer.prepend(newComment);
         // Removiendo los comentarios más antiguos si hay más de 5
@@ -495,7 +457,7 @@ input[type="submit"]:hover {
         document.getElementById('user-comment').value = '';
     });
 
-    // Agregar comentarios automáticos al abrir el sitio
+    // Agregar comentarios automaticos al abrir el sitio
     window.onload = function() {
         const chatContainer = document.getElementById('chat-container');
         // Agregando comentarios iniciales
@@ -522,28 +484,21 @@ input[type="submit"]:hover {
         }, 3 * 60 * 1000); // Cada 3 minutos (en milisegundos)
     };
 
-    // Función para generar nombres aleatorios
+    // Funcion para generar nombres aleatorios
     function getRandomName() {
-       const names = [
-            "María", "José", "Ana", "Juan", "Francisco", "Mariana", "Antonio", 
-            "Pedro", "Amanda", "Lucas", "Isabela", "Fernanda", "Carlos", "Gabriel", 
-            "Laura", "Sergio", "Isabel", "Elena", "Manuel", "Patricia", "Javier", 
-            "Beatriz", "Marta", "Alejandro", "Claudia", "Pablo", "Mario", "Julia"
-        ];
-
-        const lastNames = [
-            "Silva", "Santos", "Oliveira", "Souza", "Pereira", "Costa", "Sousa", 
-            "Rodriguez", "Almeida", "Nascimento", "Lima", "Araujo", "Fernandez", 
-            "Carvalho", "Gomez", "Martínez", "Hernández", "García", "López", 
-            "González", "Morales", "Romero", "Torres", "Ruiz", "Ortega", "Castro", 
-            "Delgado", "Vargas", "Medina"
-        ];
-
+        const names = ["María", "José", "Ana", "Juan", "Francisco", "Mariana", "Antonio", "Pedro", "Amanda", "Lucas", "Isabela", "Fernanda", "Carlos", "Gabriel", "Laura"];
+        const lastNames = ["Silva", "Santos", "Oliveira", "Souza", "Pereira", "Costa", "Sousa", "Rodriguez", "Almeida", "Nascimento", "Lima", "Araujo", "Fernandez", "Carvalho", "Gomez"];
         const randomName = names[Math.floor(Math.random() * names.length)];
         const randomLastName = lastNames[Math.floor(Math.random() * lastNames.length)];
         return randomName + " " + randomLastName;
     }
 </script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="division-1657814825221__wrapper">
 </body>
 
 </html>
