@@ -72,93 +72,207 @@
                     <!-- Prerender link -->
                     <link rel="prerender" href="https://pay.hotmart.com/L84478044O?off=2stwbu15&checkoutMode=10">
                     <!-- Comments Section -->
-                    <div id="chat-container"></div>
-                    <div id="comment-form">
+                    <div class="html-zYSSFR7540945-element ">
+                        <div>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Fake Chat</title>
+                        <style>
+                        body {
+                        font-family: Arial, sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        background-color: #f9f9f9;
+                        }
+                        #chat-container {
+                        max-width: 100%;
+                        margin: auto;
+                        padding: 10px;
+                        overflow-y: auto;
+                        max-height: calc(100vh - 280px); Ajuste de altura para caber na tela do iPhone 13
+                        margin-top: 5px;
+                        background-color: #eee; Adicionando um fundo cinza ao chat-container
+                        display: flex;
+                        flex-direction: column-reverse; Invertendo a ordem dos itens
+                        }
+                        .comment {
+                        margin-bottom: 5px; Reduzindo o espaçamento entre os comentários
+                        font-size: 24px; Aumentando o tamanho da fonte dos comentários
+                        width: 100%;
+                        box-sizing: border-box;
+                        padding: 10px; Aumentando o preenchimento dos comentários
+                        display: flex; Adicionando flexbox para alinhamento
+                        align-items: center; Alinhando os itens verticalmente
+                        }
+                        .comment .user {
+                        font-weight: bold;
+                        }
+                        .comment .text {
+                        flex: 1; O texto do comentário ocupa todo o espaço disponível
+                        overflow-wrap: break-word; Quebra de palavra para evitar que os comentários ultrapassem os limites
+                        text-align: left; Alinhando o texto do comentário à esquerda
+                        }
+                        #title {
+                        text-align: center;
+                        color: #fff;
+                        margin-top: 5px;
+                        background-color: #007bff;
+                        padding: 10px;
+                        border-radius: 5px;
+                        font-size: 20px; Tamaño menor para el título
+                        margin-bottom: 5px; Reduciendo el espaciado debajo del título
+                        }
+                        #subtitle {
+                        text-align: center;
+                        color: #fff;
+                        background-color: #6c757d;
+                        padding: 5px;
+                        border-radius: 3px;
+                        font-size: 18px; Tamaño menor para el subtítulo
+                        margin-bottom: 10px; Reduciendo el espaciado debajo del subtítulo
+                        }
+                        #comment-form {
+                        max-width: 100%;
+                        margin: auto;
+                        margin-top: 5px;
+                        text-align: center;
+                        padding: 10px;
+                        }
+                        textarea {
+                        width: calc(100% - 20px);
+                        padding: 10px;
+                        margin-top: 5px;
+                        border: 2px solid #000;
+                        border-radius: 5px;
+                        box-sizing: border-box;
+                        resize: none;
+                        font-size: 18px; Tamaño de la fuente del campo de texto
+                        }
+                        input[type="submit"] {
+                        display: block;
+                        margin: auto;
+                        margin-top: 10px;
+                        background-color: #007bff;
+                        color: #fff;
+                        border: none;
+                        border-radius: 5px;
+                        padding: 10px;
+                        cursor: pointer;
+                        font-size: 18px; Tamaño de la fuente del botón
+                        width: calc(100% - 24px);
+                        }
+                        </style>
+                        <!-- Título "CHAT LIBERADO" -->
+                        <div id="title">CHAT LIBERADO</div>
+                        <!-- Subtítulo "Mensajes Principales" -->
+                        <div id="subtitle">Mensajes Principales</div>
+                        <!-- Sección de Chat -->
+                        <div id="chat-container">
+                        </div>
+                        <!-- Formulario de Comentario -->
+                        <div id="comment-form">
                         <form id="form">
-                            <textarea id="user-comment" placeholder="Escribe tu comentario aquí..." rows="2" required></textarea>
-                            <input type="submit" value="Enviar">
+                        <textarea id="user-comment" placeholder="Escribe tu comentario aquí..." rows="2" required=""></textarea>
+                        <input type="submit" value="Enviar">
                         </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <footer class="bg-white py-3 text-center">
-        <h6><span style="color:#6C757D">Copyright 2023 – 2025</span><br><br>
-            <div class="text-secondary"><a href="terms.html" class="text-secondary">Terms of Use</a> – <a href="privacy.html" class="text-secondary">Privacy Policy</a></div><br>
-        </h6>
-    </footer>
-
-    <script>
-        // Lista de comentários automáticos ao abrir o site
-        const initialComments = [
-            "NUNCA VI NADA IGUAL",
-            "¡Wow, agora tudo faz sentido, entendi por que nunca tive sorte jajaja!",
-            "Sí, ¡quiero esta abundancia en mi vida! 🙏🙏",
-            "¡Afortunadamente conseguí un lugar en este evento! La última vez me quedé afuera"
-        ];
-
-        // Lista de comentários automáticos durante o vídeo
-        const videoComments = [
-            [
-                "Estoy agradecida por estar aquí 🙏",
-                "Qué bueno que estoy escuchando esto",
-                "Esta técnica es increíble, gracias Akira",
-                "¡Lo estoy amando! ❤️",
-            ],
-            [
-                "quiero ser uno de los primeros, ya tomé la tarjeta",
-                "¡Lo quiero!",
-                "Realmente lo deseo mucho",
-                "voy a comprar, por favor",
-                "Necesito este programa"
-            ]
-        ];
-
-        function addComment(username, text, isYou) {
-            const chatContainer = document.getElementById('chat-container');
-            const newComment = document.createElement('div');
-            newComment.classList.add('comment');
-            newComment.innerHTML = isYou ? 
-                `<span class="user">Tú:</span> <span class="text">${text}</span>` :
-                `<span class="user">${username}:</span> <span class="text">${text}</span>`;
-            chatContainer.prepend(newComment);
-            if (chatContainer.children.length > 5) {
-                chatContainer.removeChild(chatContainer.lastChild);
-            }
-        }
-
-        document.getElementById('form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const comment = document.getElementById('user-comment').value;
-            addComment('Usuario Falso', comment, true);
-            document.getElementById('user-comment').value = '';
-        });
-
-        window.onload = function() {
-            const chatContainer = document.getElementById('chat-container');
-            initialComments.forEach((comment, index) => {
-                setTimeout(() => {
-                    addComment(getRandomName(), comment, false);
-                }, index * 1000);
-            });
-            videoComments.forEach((comments, index) => {
-                setTimeout(() => {
-                    comments.forEach((comment, commentIndex) => {
-                        setTimeout(() => {
-                            addComment(getRandomName(), comment, false);
-                        }, commentIndex * 1000);
-                    });
-                }, index * 30000);
-            });
-        };
-
-        function getRandomName() {
-            const names = ['Juan', 'Ana', 'Pedro', 'Maria', 'Luis', 'Elena'];
-            return names[Math.floor(Math.random() * names.length)];
-        }
-    </script>
+                        </div>
+                        <script>
+                            // Lista de comentarios automaticos al abrir el sitio
+                            const initialComments = [
+                                "NUNCA VI NADA IGUAL",
+                                "¡Wow, ahora todo tiene sentido, entendí por qué nunca tuve suerte jajaja!",
+                                "Sí, ¡quiero esta abundancia en mi vida! 🙏🙏",
+                                "¡Afortunadamente conseguí un lugar en este evento! La última vez me quedé afuera"
+                            ];
+                        
+                            // Lista de comentarios automaticos durante el video
+                            const videoComments = [
+                                // Primeros 20 minutos
+                                [
+                                    "Estoy agradecida por estar aquí 🙏",
+                                    "Qué bueno que estoy escuchando esto",
+                                    "Esta técnica es increíble, gracias Akira",
+                                    "¡Lo estoy amando! ❤️",
+                                    
+                                ],
+                                // Últimos 10 minutos
+                                [
+                                    "quiero ser uno de los primeros, ya tomé la tarjeta",
+                                    "¡Lo quiero!",
+                                    "Realmente lo deseo mucho",
+                                    "voy a comprar, por favor",
+                                    "Necesito este programa"
+                                ]
+                            ];
+                        
+                            // Funcion para agregar un nuevo comentario
+                            function addComment(username, text, isYou) {
+                                const chatContainer = document.getElementById('chat-container');
+                                const newComment = document.createElement('div');
+                                newComment.classList.add('comment');
+                                if (isYou) {
+                                    newComment.innerHTML = '<span class="user">Tú:</span> <span class="text">' + text + '</span>';
+                                } else {
+                                    newComment.innerHTML = '<span class="user">' + username + ':</span> <span class="text">' + text + '</span>';
+                                }
+                                // Agregando el nuevo comentario al inicio del chat
+                                chatContainer.prepend(newComment);
+                                // Removiendo los comentarios más antiguos si hay más de 5
+                                if (chatContainer.children.length > 5) {
+                                    chatContainer.removeChild(chatContainer.lastChild);
+                                }
+                            }
+                        
+                            // Enviar comentario del usuario
+                            document.getElementById('form').addEventListener('submit', function(event) {
+                                event.preventDefault();
+                                const comment = document.getElementById('user-comment').value;
+                                addComment('Usuario Falso', comment, true);
+                                document.getElementById('user-comment').value = '';
+                            });
+                        
+                            // Agregar comentarios automaticos al abrir el sitio
+                            window.onload = function() {
+                                const chatContainer = document.getElementById('chat-container');
+                                // Agregando comentarios iniciales
+                                initialComments.forEach((comment, index) => {
+                                    setTimeout(() => {
+                                        addComment(getRandomName(), comment, false);
+                                    }, index * 1000); // Retraso de 1 segundo entre cada comentario inicial
+                                });
+                        
+                                // Agregar comentarios a lo largo del video
+                                let currentTime = 20 * 60; // Tiempo inicial en segundos
+                                const videoInterval = setInterval(() => {
+                                    // Verificar si el video ha terminado
+                                    if (currentTime >= 47 * 60) {
+                                        clearInterval(videoInterval); // Dejar de agregar comentarios
+                                        return;
+                                    }
+                                    // Elegir lista de comentarios según el tiempo
+                                    const comments = currentTime < 30 * 60 ? videoComments[0] : videoComments[1];
+                                    const randomIndex = Math.floor(Math.random() * comments.length);
+                                    const randomComment = comments[randomIndex];
+                                    addComment(getRandomName(), randomComment, false);
+                                    currentTime += 3 * 60; // Avanzar 3 minutos
+                                }, 3 * 60 * 1000); // Cada 3 minutos (en milisegundos)
+                            };
+                        
+                            // Funcion para generar nombres aleatorios
+                            function getRandomName() {
+                                const names = ["María", "José", "Ana", "Juan", "Francisco", "Mariana", "Antonio", "Pedro", "Amanda", "Lucas", "Isabela", "Fernanda", "Carlos", "Gabriel", "Laura"];
+                                const lastNames = ["Silva", "Santos", "Oliveira", "Souza", "Pereira", "Costa", "Sousa", "Rodriguez", "Almeida", "Nascimento", "Lima", "Araujo", "Fernandez", "Carvalho", "Gomez"];
+                                const randomName = names[Math.floor(Math.random() * names.length)];
+                                const randomLastName = lastNames[Math.floor(Math.random() * lastNames.length)];
+                                return randomName + " " + randomLastName;
+                            }
+                        </script>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="division-1657814825221__wrapper">
 </body>
 
 </html>
